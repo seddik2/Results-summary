@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+}
+*p{
+    font-size: 18px;
+}
+.container{
+    height: 800px;
+    width: 375px;
+    border: 1px solid #ccc;
+    display: flex; 
+    flex-direction: column;
+    
+}
+.top{
+    color:hsl(0, 0%, 100%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    border: none ;
+    border-radius: 0 0 30px 30px;
+    background: linear-gradient(to bottom, hsla(241, 81%, 54%, 0.7), hsla(241, 81%, 54%, 1));
+}
+
+.circle{
+    background: linear-gradient(to bottom ,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+
+.circle p{
+    color: hsl(241, 100%, 89%) ;
+    font-size: 12px;
+    
+}
+
+.result-text{
+    margin: 25px;
+}
+
+.text{
+    width: 70%;
+    color: hsl(241, 100%, 89%) ;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+.list-item{
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 40px;
+}
+.summary h3{
+    margin: 1.5rem;
+    font-size: 20px;
+    color: hsl(224, 30%, 27%);
+}
+.summary-item{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.summary-item span{
+    margin: 15px;
+}
+.percent  p{
+    display: inline;
+}
+.percent{
+    margin-left: 120px;
+    margin-right: 20px;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1); 
+    border-radius: 10px;
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 10px;
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 10px;
+}
+.visual{
+    color:  hsl(234, 85%, 45%);
+    background-color:  hsla(234, 85%, 45%, 0.1);
+    border-radius: 10px;
+}
+.percent .bottom{
+    color:hsl(241, 100%, 89%) ;
+    font-weight: 900;
+}
+.percent .up{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+button{
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 10px;
+    font-weight: 600;
+}
+@media screen and (min-width:600px) {
+    body{
+        display: flex;
+    }
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow: 8px 0 10px rgba(0, 0, 0, 0.2);
+}
+.top{
+    height: 100%;
+    border-radius: 30px;
+    width: 17rem;
+    display: flex;
+    padding-top: 30px;
+}
+.summary{
+    margin-left: 20px;
+    margin-right: 35px;
+    flex: 1;
+    
+}
+.list-item{
+    margin-top: 0;
+    justify-content: center;
+}
+.percent{
+    margin-left: 80px;
+}
+.circle{
+    height: 150px;
+    width: 150px;
+}
+.circle h1{
+    font-size: 50px;
+}
+.text{
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+}
+.great{
+    font-size: 25px;
+}
+}
